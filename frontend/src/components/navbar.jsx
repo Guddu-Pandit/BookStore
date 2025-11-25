@@ -34,7 +34,7 @@ const navbar = () => {
     </>
   );
   return (
-    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 font-sans fixed top-0 left-0 right-0 ${sticky ? "sticky-navbar shadow-md duration-300 transition-all ease-in-out" : ""}`}>
+    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4  fixed top-0 left-0 right-0 ${sticky ? "sticky-navbar shadow-md duration-300 transition-all ease-in-out" : ""}`}>
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">

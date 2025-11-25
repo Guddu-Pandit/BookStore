@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Cards() {
+function Cards({ item }) {
   return (
     <>
-    <div className="max-w-screen-2xl font-sans container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
+    <div className='max-w-screen-2xl font-sans container mx-auto md:px-20 px-4 flex flex-col md:flex-row'>
         <div className="card bg-base-100 w-96 shadow-sm">
   <figure>
     <img
