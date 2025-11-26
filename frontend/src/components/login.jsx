@@ -11,9 +11,9 @@ const login = () => {
           <div className="modal-box gap-col-4 flex flex-col">
             <form method="dialog">
               {/* Close Button */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
-              </button>
+              </Link>
             </form>
 
             {/* Heading */}
