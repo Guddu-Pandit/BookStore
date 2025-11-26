@@ -15,7 +15,7 @@ const navbar = () => {
       localStorage.setItem("theme","light");
       document.body.classList.remove("dark");
     }
-  },[theme]);  
+  },[theme]);
 
   const [sticky, setSticky] = useState(false);
   useEffect (() => {
