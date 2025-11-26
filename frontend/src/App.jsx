@@ -1,16 +1,18 @@
 import React from 'react'
 import Home from './Home/home.jsx'
 import {Route,Routes } from 'react-router-dom'
-import Course from './components/course.jsx'
+import Courses from './Course/courses.jsx'
 
 function App() {
 
   return (
     <>
-      <Routes>
+     <div className='dark:bg-slate-900 dark:text-white'>
+       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/course' element={<Course />} />
+        <Route path='/course' element={<Courses />} />
       </Routes>
+     </div>
     </>
   )
 }
