@@ -1,5 +1,6 @@
 import React from "react";
 import { useState,useEffect } from "react";
+import Login from "./login.jsx";
 
 const navbar = () => {
 
@@ -49,7 +50,7 @@ const navbar = () => {
     </>
   );
   return (
-    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4  fixed top-0 left-0 right-0 z-50 ${sticky ? "sticky-navbar shadow-md duration-300 transition-all ease-in-out" : ""}`}>
+    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 font-sans fixed top-0 left-0 right-0 z-50 ${sticky ? "sticky-navbar shadow-md duration-300 transition-all ease-in-out" : ""}`}>
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -137,9 +138,11 @@ const navbar = () => {
             </label>
           </div>
           <div className="">
-            <a className="btn font-semibold text-white bg-black cursor-pointer hover:bg-slate-800 duration-300">
+            <a className="btn font-semibold text-white bg-black cursor-pointer hover:bg-slate-800 duration-300"
+            onClick={()=>document.getElementById('my_modal_3').showModal()}>
               Login
             </a>
+            <Login />
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@
     "name": "History Book",
     "title": "Dive into ancient civilizations and past events.",
     "price": 30,
-    "category": "Free",
+    "category": "Paid",
     "image": "https://images.unsplash.com/photo-1529070538774-1843cb3265df"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Fantasy Book",
     "title": "Enter magical realms filled with mythical creatures.",
     "price": 300,
-    "category": "Free",
+    "category": "Paid",
     "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Romance Book",
     "title": "Heartwarming love stories for every reader.",
     "price": 150,
-    "category": "Free",
+    "category": "Paid",
     "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Technology Book",
     "title": "Discover the future of tech and innovation.",
     "price": 100,
-    "category": "Free",
+    "category":"Paid",
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Business Book",
     "title": "Learn strategies for success and leadership.",
     "price": 65,
-    "category": "Free",
+    "category": "Paid",
     "image": "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Travel Book",
     "title": "Explore beautiful destinations across the world.",
     "price": 70,
-    "category": "Free",
+    "category": "Paid",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Art Book",
     "title": "A visual journey through classic and modern art.",
     "price": 45,
-    "category": "Free",
+    "category": "Paid",
     "image":"https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
   },
   {
@@ -108,7 +108,7 @@
     "name": "Motivation Book",
     "title": "Powerful lessons to inspire your daily life.",
     "price": 50,
-    "category": "Free",
+    "category": "Paid",
     "image":  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
   }
 ]
