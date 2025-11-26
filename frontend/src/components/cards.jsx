@@ -3,22 +3,22 @@ import React from 'react'
 function Cards({ item }) {
   return (
     <>
-    <div className='max-w-screen-2xl font-sans container mx-auto md:px-20 px-4 flex flex-col md:flex-row'>
-        <div className="card bg-base-100 w-96 shadow-sm">
+    <div className='mt-4 mb-3 p-3'>
+        <div className="card bg-base-100 w-98 shadow-sm">
   <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
+    <img className='w-full h-70 object-cover'
+      src={item.image}
+      alt={item.name} />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">
-      Card Title
-      <div className="badge badge-secondary">NEW</div>
+    <h2 className="card-title text-xl font-bold">
+      {item.name}
+      <div className="badge badge-secondary">Free</div>
     </h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions justify-end">
-      <div className="badge badge-outline">Fashion</div>
-      <div className="badge badge-outline">Products</div>
+    <p>{item.title}</p>
+    <div className="card-actions justify-between ">
+      <div className="badge badge-outline rounded-full">${item.price}</div>
+      <div className="badge badge-outline p-3 rounded-full hover:bg-pink-500 duration-200 hover:text-amber-50">Buy Now</div>
     </div>
   </div>
 </div>
