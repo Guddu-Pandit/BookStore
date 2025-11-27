@@ -1,10 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Login from "./login.jsx";
+import { useForm } from "react-hook-form"
+
 
 const Signup = () => {
+    const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => console.log(data)
   return (
     <>
       <div className="font-sans flex h-screen items-center justify-center bg-gray-100">
+        <form action="submit" onSubmit={handleSubmit(onSubmit)}>
         <div className="w-[380px] bg-white shadow-lg p-6 rounded-xl relative gap-col-4 flex flex-col ">
           <Link
             to="/"
@@ -22,8 +33,10 @@ const Signup = () => {
             <input
               type="text"
               placeholder="Enter your name"
+              {...register("name", { required: true })}
               className="input input-bordered outline-none w-full"
             />
+            {errors.name && <span className="text-sm text-red-500">This field is required*</span>}
           </label>
 
           {/* Email Input */}
@@ -33,7 +46,9 @@ const Signup = () => {
               type="email"
               placeholder="Enter your email"
               className="input input-bordered outline-none w-full"
+               {...register("email", { required: true })}
             />
+            {errors.email && <span className="text-sm text-red-500">This field is required*</span>}
           </label>
 
           {/* Password Input */}
@@ -43,7 +58,9 @@ const Signup = () => {
               type="password"
               placeholder="Enter your password"
               className="input input-bordered outline-none w-full"
+               {...register("password", { required: true })}
             />
+            {errors.password && <span className="text-sm text-red-500">This field is required*</span>}
           </label>
 
           {/* Signup Button */}
@@ -55,13 +72,15 @@ const Signup = () => {
           <p className="text-center text-sm mt-4">
             Have an account?{" "}
             <Link
-              className="text-pink-500 font-semibold hover:text-pink-700 hover:underline"
+              className=" text-pink-500 font-semibold hover:text-pink-700 hover:underline"
               onClick={()=>document.getElementById('my_modal_3').showModal()}
             >
               Login
             </Link>
           </p>
+          <Login />
         </div>
+        </form>
       </div>
     </>
   );

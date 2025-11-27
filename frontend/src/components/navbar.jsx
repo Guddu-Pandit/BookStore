@@ -78,7 +78,7 @@ const navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="text-2xl font-bold cursor-pointer">BookStore</a>
+          <a href="/" className="text-2xl font-bold cursor-pointer">BookStore</a>
         </div>
         <div className="navbar-end space-x-4">
           <div className="navbar-center hidden lg:flex">
